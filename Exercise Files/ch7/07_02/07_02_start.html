@@ -17,6 +17,7 @@
           type="email"
           required
           placeholder="email@example.com"
+          pattern="[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]+"
         />
       </div>
       <div>
@@ -27,7 +28,12 @@
           type="password"
           required
           placeholder="8 characters minimum"
+          minlength="8"
         />
+      </div>
+      <div>
+        <input type="checkbox" id="newsletter" name="newslettter" />
+        <label for="newsletter">Yes! Send me weekly tips.</label>
       </div>
       <button type="submit">Create account</button>
     </form>
