@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ch 7: Forms</title>
-    <!-- <link rel="stylesheet" href="forms.css"> -->
+    <link rel="stylesheet" href="forms.css" />
   </head>
   <body>
     <form action="submit.html" method="GET">
-      <div><label>Email</label> <input name="email" /></div>
+      <h2>Create an Account</h2>
       <div>
-        <label>Password</label> <input name="password" type="password" />
+        <label for="email">Email</label> <input id="email" name="email" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" />
       </div>
       <button>Create account</button>
     </form>
